@@ -22,7 +22,7 @@ const TextArea = () => {
         })
     };
     return (
-        <div className="w-full">
+        <div className="w-8/12 m-auto mb-2">
             <form action="" onSubmit={handleSubmit} className="w-full">
                 <textarea
                     name="message"
