@@ -4,6 +4,6 @@
     </head>
     <body>
         <div id="root"></div>
-        <script type="text/javascript" src="{{mix('/js/app.js')}}"></script>
+        <script type="text/javascript" src="{{mix('minChat/js/app.js')}}"></script>
     </body>
 </html>
