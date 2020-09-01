@@ -32,7 +32,7 @@ const TextArea = () => {
                     onChange={handleChange}
                     value={data.message}
                 ></textarea>
-                <button className="w-full text-2xl bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+                <button className="w-full text-4xl bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
                     Enviar
                 </button>
             </form>
