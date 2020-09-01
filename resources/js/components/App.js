@@ -9,7 +9,7 @@ const App = () => {
 
     React.useEffect(() => {
         // dispatch(getMessages())
-        const callMessages = setInterval(() => dispatch(getMessages()), 5000)
+        const callMessages = setInterval(() => dispatch(getMessages()), 2000)
           return () => {
             clearInterval(callMessages)
           }
