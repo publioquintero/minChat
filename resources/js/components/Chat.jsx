@@ -6,7 +6,7 @@ const Chat = () => {
     return (
         <div className="bg-gray-100 w-full chat overflow-y-scroll">
             {Object.entries(main.messages).map( ([key, value]) => 
-                <div className="animate__animated animate__fadeInUp animate__faster text-blue-600 bg-blue-200 m-2 p-2" key={key}>{value.message}</div>
+                <div className="text-sm animate__animated animate__fadeInUp animate__faster text-blue-600 bg-blue-200 m-2 p-2" key={key}>{value.message}</div>
             )}
         </div>
     )
