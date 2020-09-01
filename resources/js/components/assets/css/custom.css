@@ -6,11 +6,11 @@ body, html {
     padding: 2%;
 }
 .text {
-    height: 18%;
-    max-height: 18%;
+    height: 20%;
+    max-height: 20%;
     position: fixed;
-    bottom: 18%;
-    left: 0px;
+    bottom: 0%;
+    left: 2%;
     width: 86%;
 }
 
