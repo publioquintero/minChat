@@ -22,17 +22,17 @@ const TextArea = () => {
         })
     };
     return (
-        <div className="w-full text">
-            <form action="" onSubmit={handleSubmit} className="w-full m-2 p-2">
+        <div className="bg-blue-200 w-full text">
+            <form action="" onSubmit={handleSubmit} className="w-full">
                 <textarea
                     name="message"
                     id="message"
-                    rows="3"
-                    className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 text-4xl"
+                    rows="2"
+                    className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 text-xl resize-none"
                     onChange={handleChange}
                     value={data.message}
                 ></textarea>
-                <button className="w-full text-4xl bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+                <button className="w-full text-xl bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
                     Enviar
                 </button>
             </form>
