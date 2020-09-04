@@ -8,7 +8,7 @@ use App\Message;
 class MessageController extends Controller
 {
     function index() {
-        $records = Message::orderBy('id','desc')->get();
+        $records = Message::all();
         return response()->json($records);
     }
 

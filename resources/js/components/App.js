@@ -8,8 +8,8 @@ const App = () => {
     const dispatch = useDispatch();
 
     React.useEffect(() => {
-        // dispatch(getMessages())
-        const callMessages = setInterval(() => dispatch(getMessages()), 5000)
+        dispatch(getMessages())
+        const callMessages = setInterval(() => dispatch(getMessages()), 1000)
           return () => {
             clearInterval(callMessages)
           }
@@ -17,8 +17,8 @@ const App = () => {
 
     return (
         <div className="animate__animated animate__fadeIn animate__faster">
-            <TextArea />
             <Chat />
+            <TextArea />
         </div>
     );
 };

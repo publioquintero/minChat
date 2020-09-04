@@ -13,7 +13,7 @@ export default (state = initialState, action) => {
         case 'SEND_MESSAGE': {
             return {
                 ...state,
-                messages: state.messages.unshift(action.payload)
+                messages: state.messages.concat(action.payload)
             }
         }
         default: return state;
