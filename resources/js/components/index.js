@@ -5,7 +5,6 @@ import "./assets/css/tailwind.css";
 import "animate.css/animate.min.css";
 import store from "./redux/store";
 import { Provider } from "react-redux";
-import './assets/css/custom.css'
 
 if (document.getElementById("root")) {
     ReactDOM.render(
