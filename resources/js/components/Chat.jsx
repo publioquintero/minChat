@@ -12,6 +12,7 @@ const Chat = () => {
     React.useEffect(scrollToBottom, [main.messages]);
 
     return (
+
         <React.Fragment>
             <div
                 id="chatText"
@@ -31,5 +32,6 @@ const Chat = () => {
         </React.Fragment>
     );
 };
+
 
 export default Chat;
