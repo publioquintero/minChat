@@ -20,11 +20,11 @@ const Chat = () => {
             >
                 {Object.entries(main.messages).map(([key, value]) => (
                     <div
-                        className="text-xs animate__animated animate__fadeInUp animate__faster text-blue-600 bg-blue-200 m-2 p-2"
+                        className="text-xl animate__animated animate__fadeInUp animate__faster text-blue-600 bg-blue-200 m-2 p-2"
                         key={key}
                     >
                         {value.message}
-                        <div className="text-base block text-right text-blue-300">{value.created_at}</div>
+                        <div className="text-xs block text-right text-blue-300">{value.created_at}</div>
                     </div>
                 ))}
                 {/* <div ref={messagesEndRef} /> */}
