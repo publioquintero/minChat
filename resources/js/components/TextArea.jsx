@@ -44,7 +44,7 @@ const TextArea = () => {
                 </div>
                 
             </form>
-            <div className="h-10 w-full"></div>
+            {/* <div className="h-64 w-full"></div> */}
         </div>
     );
 };
