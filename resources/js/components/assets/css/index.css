@@ -4,15 +4,17 @@
 .send {
     @apply w-8/12;
     @apply float-right;
-    @apply text-blue-800;
+    @apply text-blue-700;
     @apply bg-blue-200;
     @apply text-right;
+    @apply border-blue-300;
 }
 .receive {
     @apply w-8/12;
     @apply float-left;
     @apply text-white;
     @apply bg-gray-600;
+    @apply border-gray-800;
 }
 .sendtime {
     @apply text-blue-400;

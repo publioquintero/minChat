@@ -11,8 +11,8 @@ class MessageController extends Controller
         $records = Message::all();
         $arreglo = [];
         foreach($records as $r) {
-            $class = ($r->remote_address == $_SERVER['REMOTE_ADDR']) ? 'send' : 'receive';
-            $classtime = ($r->remote_address == $_SERVER['REMOTE_ADDR']) ? 'sendtime' : 'receivetime';
+            $class = ($r->remote_address == $_SERVER['REMOTE_ADDR']) ? 'receive' : 'receive';
+            $classtime = ($r->remote_address == $_SERVER['REMOTE_ADDR']) ? 'receivetime' : 'receivetime';
             $arreglo[] = [
                 "message" => $r->message,
                 "time" => $r->time,

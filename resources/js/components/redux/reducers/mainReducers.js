@@ -1,6 +1,7 @@
 const initialState = {
     messages: [],
-    sent: false
+    sent: false,
+    firstLoad: true,
 }
 
 export default (state = initialState, action) => {
@@ -27,6 +28,12 @@ export default (state = initialState, action) => {
             return {
                 ...state,
                 sent: false
+            }
+        }
+        case 'CLOSE_FIRST_LOAD': {
+            return {
+                ...state,
+                firstLoad: false
             }
         }
         default: return state;

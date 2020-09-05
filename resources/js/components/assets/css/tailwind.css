@@ -594,12 +594,15 @@ video {
   width: 66.666667%;
   float: right;
   --text-opacity: 1;
-  color: #2c5282;
-  color: rgba(44, 82, 130, var(--text-opacity));
+  color: #2b6cb0;
+  color: rgba(43, 108, 176, var(--text-opacity));
   --bg-opacity: 1;
   background-color: #bee3f8;
   background-color: rgba(190, 227, 248, var(--bg-opacity));
   text-align: right;
+  --border-opacity: 1;
+  border-color: #90cdf4;
+  border-color: rgba(144, 205, 244, var(--border-opacity));
 }
 
 .receive {
@@ -611,6 +614,9 @@ video {
   --bg-opacity: 1;
   background-color: #718096;
   background-color: rgba(113, 128, 150, var(--bg-opacity));
+  --border-opacity: 1;
+  border-color: #2d3748;
+  border-color: rgba(45, 55, 72, var(--border-opacity));
 }
 
 .sendtime {
