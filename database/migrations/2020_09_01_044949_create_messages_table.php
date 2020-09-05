@@ -17,7 +17,7 @@ class CreateMessagesTable extends Migration
             $table->id();
             $table->longText('message');
             $table->string('time');
-            $table->string('remote_addr');
+            $table->string('remote_address');
             $table->timestamps();
             $table->softDeletes();
         });
