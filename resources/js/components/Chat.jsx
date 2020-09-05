@@ -16,7 +16,7 @@ const Chat = () => {
         <React.Fragment>
             <div
                 id="chatText"
-                className="bg-gray-100 w-8/12 m-auto h-64 overflow-y-scroll"
+                className="bg-gray-100 w-full h-screen overflow-y-scroll pb-24"
             >
                 {Object.entries(main.messages).map(([key, value]) => (
                     <div
