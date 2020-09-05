@@ -42,6 +42,7 @@ const TextArea = () => {
                         <img src={sent} className="w-100" alt=""/>
                     </button>
                 </div>
+                <div className="h-10 w-full"></div>
             </form>
         </div>
     );
