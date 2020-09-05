@@ -33,7 +33,7 @@ const TextArea = () => {
                 <input
                     name="message"
                     id="message"
-                    className="text-base border  mb-1 appearance-none block w-10/12 m-auto bg-gray-200 text-gray-700 border border-gray-500  py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 resize-none"
+                    className="text-base border mb-1 appearance-none block w-10/12 m-auto bg-gray-200 text-gray-700 border border-gray-500  py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 resize-none"
                     onChange={handleChange}
                     value={data.message}
                 />

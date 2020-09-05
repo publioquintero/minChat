@@ -3,12 +3,7 @@ import { useSelector } from "react-redux";
 
 const Chat = () => {
     const main = useSelector(state => state.mainReducers);
-    // const messagesEndRef = React.useRef(null);
-
-    // const scrollToBottom = () => {
-    //     messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
-    // };
-
+ 
     React.useEffect(updateScroll, [main.messages]);
 
     function updateScroll(){
@@ -26,7 +21,7 @@ const Chat = () => {
             >
                 {Object.entries(main.messages).map(([key, value]) => (
                     <div
-                        className={`${value.class} text-sm animate__animated animate__fadeInUp animate__faster m-2 p-2`}
+                        className={`${value.class} text-sm animate__animated animate__fadeInRight animate__fast m-2 p-2`}
                         key={key}
                     >
                         {value.message}
@@ -35,7 +30,6 @@ const Chat = () => {
                     </div>
                     
                 ))}
-                {/* <div ref={messagesEndRef}></div> */}
             </div>
         </React.Fragment>
     );
