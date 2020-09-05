@@ -24,7 +24,7 @@ const Chat = () => {
                         key={key}
                     >
                         {value.message}
-                        <div className="text-xs block text-right text-blue-300">{value.created_at}</div>
+                        <div className="text-base block text-right text-blue-300">{value.created_at}</div>
                     </div>
                 ))}
                 <div ref={messagesEndRef} />
