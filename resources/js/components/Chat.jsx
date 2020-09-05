@@ -11,7 +11,7 @@ const Chat = () => {
                 updateScroll();
                 dispatch({ type: "CLOSE_FIRST_LOAD" });
             }
-        },500);
+        },1000);
     }, [main.firstLoad]);
 
     React.useEffect(() => {
