@@ -628,8 +628,8 @@ video {
 
 .receivetime {
   --text-opacity: 1;
-  color: #718096;
-  color: rgba(113, 128, 150, var(--text-opacity));
+  color: #e2e8f0;
+  color: rgba(226, 232, 240, var(--text-opacity));
   text-align: right;
 }
 
