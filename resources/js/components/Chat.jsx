@@ -1,5 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
+import BackG from '../components/assets/images/bg.png'
 
 const Chat = () => {
     const main = useSelector(state => state.mainReducers);
@@ -30,14 +31,14 @@ const Chat = () => {
         <React.Fragment>
             <div
                 id="chatText"
-                style={{ height: "73vh" }}
+                style={{ height: "73vh", backgroundImage: 'url('+BackG+')', backgroundSize:'cover', backgroundPosition: 'center center' }}
                 className="bg-gray-100 w-full overflow-y-scroll pb-1"
             >
                 {Object.entries(main.messages).map(([key, value]) => (
                     <div
                         className={` ${
                             value.class ? value.class : "send"
-                        } rounded shadow border text-sm animate__animated animate__fadeInDown animate__faster m-2 p-2`}
+                        } rounded shadow border bg-opacity-75 text-sm animate__animated animate__fadeInDown animate__faster m-2 p-2`}
                         key={key}
                     >
                         {value.message}
