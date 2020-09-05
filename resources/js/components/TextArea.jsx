@@ -31,7 +31,7 @@ const TextArea = () => {
             <form
                 action=""
                 onSubmit={handleSubmit}
-                className="w-11/12 m-auto flex"
+                className="w-11/12 m-auto flex items-center"
                 autoComplete="off"
             >
                 <input
