@@ -612,6 +612,18 @@ video {
   background-color: rgba(113, 128, 150, var(--bg-opacity));
 }
 
+.sendtime {
+  --text-opacity: 1;
+  color: #63b3ed;
+  color: rgba(99, 179, 237, var(--text-opacity));
+}
+
+.receivetime {
+  --bg-opacity: 1;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
+}
+
 .container {
   width: 100%;
 }

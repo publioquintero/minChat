@@ -13,6 +13,12 @@
     @apply text-white;
     @apply bg-gray-600;
 }
+.sendtime {
+    @apply text-blue-400;
+}
+.receivetime {
+    @apply bg-white;
+}
 @tailwind components;
 
 @tailwind utilities;
