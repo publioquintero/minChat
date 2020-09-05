@@ -16,7 +16,7 @@ const App = () => {
     });
 
     return (
-        <div style={ { height: "70vh" } } className="animate__animated animate__fadeIn animate__faster absolute bottom-0 w-screen bg-red-400 overflow-visible">
+        <div style={ { height: "80vh" } } className="animate__animated animate__fadeIn animate__faster absolute bottom-0 w-screen bg-red-400 overflow-visible">
             <Chat />
             <TextArea /> 
         </div>
