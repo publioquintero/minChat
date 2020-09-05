@@ -621,10 +621,10 @@ video {
 }
 
 .receivetime {
-  --bg-opacity: 1;
-  background-color: #fff;
-  background-color: rgba(255, 255, 255, var(--bg-opacity));
-  text-align: left;
+  --text-opacity: 1;
+  color: #a0aec0;
+  color: rgba(160, 174, 192, var(--text-opacity));
+  text-align: right;
 }
 
 .container {

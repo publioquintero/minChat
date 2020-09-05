@@ -5,21 +5,24 @@ import sent from '../components/assets/images/unnamed.png'
 
 const TextArea = () => {
     const [data, setData] = React.useState({
-        message: ""
+        message: "",
     });
 
     const dispatch = useDispatch();
 
     const handleChange = event => {
         setData({
+            ...data,
             [event.target.name]: event.target.value
         });
+        console.log(data)
     };
     const handleSubmit = event => {
         event.preventDefault();
         console.log(data);
         dispatch(sentMessage(data));
         setData({
+            ...data,
             message: ""
         })
     };

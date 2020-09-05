@@ -19,8 +19,8 @@
     @apply text-left;
 }
 .receivetime {
-    @apply bg-white;
-    @apply text-left;
+    @apply text-gray-500;
+    @apply text-right;
 }
 @tailwind components;
 

@@ -15,12 +15,17 @@ export const getMessages = () => async dispatch => {
 }
 
 export const sentMessage = (data) => async dispatch => {
+    var  today = new Date();
+    const d = today.getDate()+'-'+today.getMonth()+'-'+today.getFullYear()+' '+today.getHours()+':'+today.getMinutes()+':'+today.getSeconds()
     try {
         const response = await api.post('messages', data);
         if(response.status === 200) {
             dispatch({
                 type: 'SEND_MESSAGE',
-                payload: data
+                payload: {
+                    message: data.message,
+                    time: d,
+                }
             })
             dispatch({
                 type: 'SENDING'
