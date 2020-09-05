@@ -17,7 +17,7 @@ const Chat = () => {
             <div
                 id="chatText"
                 style={{ height: "70vh"}}
-                className="bg-gray-100 w-full overflow-y-scroll pb-3"
+                className="bg-gray-100 w-full overflow-y-scroll pb-24"
             >
                 {Object.entries(main.messages).map(([key, value]) => (
                     <div
