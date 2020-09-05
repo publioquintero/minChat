@@ -31,7 +31,7 @@ const Chat = () => {
         <React.Fragment>
             <div
                 id="chatText"
-                style={{ height: "73vh", backgroundImage: 'url('+BackG+')', backgroundSize:'cover', backgroundPosition: 'center center' }}
+                style={{ height: "74vh", backgroundImage: 'url('+BackG+')', backgroundSize:'cover', backgroundPosition: 'center center' }}
                 className="bg-gray-100 w-full overflow-y-scroll pb-1"
             >
                 {Object.entries(main.messages).map(([key, value]) => (
