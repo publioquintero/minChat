@@ -3,13 +3,13 @@ import { useSelector } from "react-redux";
 
 const Chat = () => {
     const main = useSelector(state => state.mainReducers);
-    const messagesEndRef = React.useRef(null);
+    // const messagesEndRef = React.useRef(null);
 
-    const scrollToBottom = () => {
-        messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
-    };
+    // const scrollToBottom = () => {
+    //     messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
+    // };
 
-    React.useEffect(scrollToBottom, [main.messages]);
+    // React.useEffect(scrollToBottom, [main.messages]);
 
     return (
 
@@ -27,7 +27,7 @@ const Chat = () => {
                         <div className="text-base block text-right text-blue-300">{value.created_at}</div>
                     </div>
                 ))}
-                <div ref={messagesEndRef} />
+                {/* <div ref={messagesEndRef} /> */}
             </div>
         </React.Fragment>
     );
