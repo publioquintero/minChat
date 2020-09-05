@@ -30,7 +30,7 @@ const Chat = () => {
         <React.Fragment>
             <div
                 id="chatText"
-                style={{ height: "75vh" }}
+                style={{ height: "73vh" }}
                 className="bg-gray-100 w-full overflow-y-scroll pb-1"
             >
                 {Object.entries(main.messages).map(([key, value]) => (
