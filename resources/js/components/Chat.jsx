@@ -16,7 +16,8 @@ const Chat = () => {
         <React.Fragment>
             <div
                 id="chatText"
-                className="bg-gray-100 w-full h-screen overflow-y-scroll pb-24"
+                style={{ height: "70vh"}}
+                className="bg-gray-100 w-full overflow-y-scroll pb-5"
             >
                 {Object.entries(main.messages).map(([key, value]) => (
                     <div
@@ -25,10 +26,11 @@ const Chat = () => {
                     >
                         {value.message}
                         <div className="text-xs block text-right text-blue-300">{value.created_at}</div>
-                        <div ref={messagesEndRef} />
+                        
                     </div>
+                    
                 ))}
-                
+                <div ref={messagesEndRef}></div>
             </div>
         </React.Fragment>
     );
