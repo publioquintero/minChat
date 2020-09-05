@@ -38,7 +38,7 @@ const TextArea = () => {
                     value={data.message}
                 />
                 <div className="w-2/12">
-                    <button class="bg-transparent  py-2 px-4  rounded">
+                    <button className="bg-transparent  py-2 px-4  rounded">
                         <img src={sent} className="w-100" alt=""/>
                     </button>
                 </div>
