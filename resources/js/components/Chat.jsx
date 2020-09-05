@@ -9,7 +9,12 @@ const Chat = () => {
     //     messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
     // };
 
-    // React.useEffect(scrollToBottom, [main.messages]);
+    React.useEffect(updateScroll, [main.messages]);
+
+    function updateScroll(){
+        var element = document.getElementById("chatText");
+        element.scrollTop = element.scrollHeight;
+    }
 
     return (
 
