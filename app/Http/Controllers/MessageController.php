@@ -15,6 +15,8 @@ class MessageController extends Controller
     function store(Request $request) {
         $record =  new Message(); 
         $record->message = $request->message;
+        $record->time = date('d-m-y h:i:s S');
+        $record->remote_address = $_SERVER['REMOTE_ADDR'];
         $record->save();
         return response()->json($record);
     }
