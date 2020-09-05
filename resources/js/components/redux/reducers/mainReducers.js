@@ -1,5 +1,6 @@
 const initialState = {
     messages: [],
+    sent: false
 }
 
 export default (state = initialState, action) => {
@@ -7,13 +8,25 @@ export default (state = initialState, action) => {
         case 'GET_MESSAGES': {
             return {
                 ...state,
-                messages: action.payload
+                messages: action.payload,
             }
         }
         case 'SEND_MESSAGE': {
             return {
                 ...state,
                 messages: state.messages.concat(action.payload)
+            }
+        }
+        case 'SENDING': {
+            return {
+                ...state,
+                sent: true
+            }
+        }
+        case 'SEND_DONE': {
+            return {
+                ...state,
+                sent: false
             }
         }
         default: return state;

@@ -599,6 +599,7 @@ video {
   --bg-opacity: 1;
   background-color: #bee3f8;
   background-color: rgba(190, 227, 248, var(--bg-opacity));
+  text-align: right;
 }
 
 .receive {
@@ -616,12 +617,14 @@ video {
   --text-opacity: 1;
   color: #63b3ed;
   color: rgba(99, 179, 237, var(--text-opacity));
+  text-align: left;
 }
 
 .receivetime {
   --bg-opacity: 1;
   background-color: #fff;
   background-color: rgba(255, 255, 255, var(--bg-opacity));
+  text-align: left;
 }
 
 .container {

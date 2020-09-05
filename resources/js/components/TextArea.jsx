@@ -7,6 +7,7 @@ const TextArea = () => {
     const [data, setData] = React.useState({
         message: ""
     });
+
     const dispatch = useDispatch();
 
     const handleChange = event => {
@@ -20,7 +21,7 @@ const TextArea = () => {
         dispatch(sentMessage(data));
         setData({
             message: ""
-        });
+        })
     };
     return (
         <div className="w-full absolute bottom-0">
@@ -37,7 +38,7 @@ const TextArea = () => {
                     onChange={handleChange}
                     value={data.message}
                 />
-                <div className="w-2/12">
+                <div className="w-2/12 ">
                     <button className="bg-transparent  py-2 px-4  rounded">
                         <img src={sent} className="w-100" alt=""/>
                     </button>

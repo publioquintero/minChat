@@ -22,6 +22,9 @@ export const sentMessage = (data) => async dispatch => {
                 type: 'SEND_MESSAGE',
                 payload: data
             })
+            dispatch({
+                type: 'SENDING'
+            })
         }
     } catch (error) {
         console.log(error)

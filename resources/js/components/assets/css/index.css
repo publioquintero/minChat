@@ -6,6 +6,7 @@
     @apply float-right;
     @apply text-blue-800;
     @apply bg-blue-200;
+    @apply text-right;
 }
 .receive {
     @apply w-8/12;
@@ -15,9 +16,11 @@
 }
 .sendtime {
     @apply text-blue-400;
+    @apply text-left;
 }
 .receivetime {
     @apply bg-white;
+    @apply text-left;
 }
 @tailwind components;
 
