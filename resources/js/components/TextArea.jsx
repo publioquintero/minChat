@@ -27,7 +27,7 @@ const TextArea = () => {
             <form
                 action=""
                 onSubmit={handleSubmit}
-                className="w-11/12 m-auto flex"
+                className=""
                 autoComplete="off"
             >
                 <input
@@ -44,7 +44,6 @@ const TextArea = () => {
                 </div>
                 
             </form>
-            {/* <div className="h-64 w-full"></div> */}
         </div>
     );
 };
