@@ -21,7 +21,7 @@ const Chat = () => {
             >
                 {Object.entries(main.messages).map(([key, value]) => (
                     <div
-                        className={`${value.class} text-sm animate__animated animate__fadeInRight animate__fast m-2 p-2`}
+                        className={`${value.class} text-sm animate__animated animate__fadeInUp animate__fast m-2 p-2`}
                         key={key}
                     >
                         {value.message}
