@@ -1,5 +1,18 @@
 @tailwind base;
 
+
+.send {
+    @apply w-8/12;
+    @apply float-right;
+    @apply text-blue-800;
+    @apply bg-blue-200;
+}
+.receive {
+    @apply w-8/12;
+    @apply float-left;
+    @apply text-white;
+    @apply bg-gray-600;
+}
 @tailwind components;
 
 @tailwind utilities;

@@ -17,11 +17,11 @@ const Chat = () => {
             <div
                 id="chatText"
                 style={{ height: "70vh"}}
-                className="bg-gray-100 w-full overflow-y-scroll pb-24"
+                className="bg-gray-100 w-full overflow-y-scroll pb-10"
             >
                 {Object.entries(main.messages).map(([key, value]) => (
                     <div
-                        className="text-sm animate__animated animate__fadeInUp animate__faster text-blue-800 bg-blue-200 m-2 p-2"
+                        className={`${value.class} text-sm animate__animated animate__fadeInUp animate__faster m-2 p-2`}
                         key={key}
                     >
                         {value.message}
