@@ -20,7 +20,7 @@ const Chat = () => {
             >
                 {Object.entries(main.messages).map(([key, value]) => (
                     <div
-                        className="text-xl animate__animated animate__fadeInUp animate__faster text-blue-600 bg-blue-200 m-2 p-2"
+                        className="text-sm animate__animated animate__fadeInUp animate__faster text-blue-600 bg-blue-200 m-2 p-2"
                         key={key}
                     >
                         {value.message}
