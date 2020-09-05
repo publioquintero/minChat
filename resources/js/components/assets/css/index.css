@@ -17,11 +17,11 @@
     @apply border-gray-800;
 }
 .sendtime {
-    @apply text-blue-400;
+    @apply text-blue-500;
     @apply text-left;
 }
 .receivetime {
-    @apply text-gray-500;
+    @apply text-gray-600;
     @apply text-right;
 }
 @tailwind components;
