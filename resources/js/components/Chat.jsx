@@ -6,10 +6,12 @@ const Chat = () => {
     const dispatch = useDispatch();
 
     React.useEffect(() => {
-        if (main.firstLoad) {
-            updateScroll;
-            dispatch({ type: "CLOSE_FIRST_LOAD" });
-        }
+        setTimeout(() => {
+            if (main.firstLoad) {
+                updateScroll();
+                dispatch({ type: "CLOSE_FIRST_LOAD" });
+            }
+        },500);
     }, [main.firstLoad]);
 
     React.useEffect(() => {
@@ -26,33 +28,29 @@ const Chat = () => {
 
     return (
         <React.Fragment>
-            {!main.firstLoad && (
-                <div
-                    id="chatText"
-                    style={{ height: "70vh" }}
-                    className="bg-gray-100 w-full overflow-y-scroll pb-1"
-                >
-                    {Object.entries(main.messages).map(([key, value]) => (
+            <div
+                id="chatText"
+                style={{ height: "70vh" }}
+                className="bg-gray-100 w-full overflow-y-scroll pb-1"
+            >
+                {Object.entries(main.messages).map(([key, value]) => (
+                    <div
+                        className={` ${
+                            value.class ? value.class : "send"
+                        } rounded shadow border text-sm animate__animated animate__fadeInDown animate__faster m-2 p-2`}
+                        key={key}
+                    >
+                        {value.message}
                         <div
-                            className={` ${
-                                value.class ? value.class : "send"
-                            } rounded shadow border text-sm animate__animated animate__fadeInDown animate__faster m-2 p-2`}
-                            key={key}
+                            className={`${
+                                value.classtime ? value.classtime : "sendtime"
+                            } text-xs block`}
                         >
-                            {value.message}
-                            <div
-                                className={`${
-                                    value.classtime
-                                        ? value.classtime
-                                        : "sendtime"
-                                } text-xs block`}
-                            >
-                                {value.time}
-                            </div>
+                            {value.time}
                         </div>
-                    ))}
-                </div>
-            )}
+                    </div>
+                ))}
+            </div>
         </React.Fragment>
     );
 };
